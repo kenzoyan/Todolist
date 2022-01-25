@@ -11,7 +11,7 @@ def index(request):
     if request.method == 'POST':
         new_todo = Todo(
             title = request.POST['title'],
-            created_at = datetime.datetime.now(),
+            # created_at = datetime.datetime.now(),
         )
         new_todo.save()
         return redirect('/')
