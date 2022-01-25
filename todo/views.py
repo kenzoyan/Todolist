@@ -2,7 +2,8 @@ from venv import create
 from django.shortcuts import render, redirect
 
 from todo.models import Todo
-import datetime
+# import datetime
+from django.utils import timezone
 # Create your views here.
 
 
@@ -11,7 +12,7 @@ def index(request):
     if request.method == 'POST':
         new_todo = Todo(
             title = request.POST['title'],
-            # created_at = datetime.datetime.now(),
+            created_at = timezone.now(),
         )
         new_todo.save()
         return redirect('/')
