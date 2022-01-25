@@ -1,4 +1,4 @@
 # Todolist
 ## Django Practice. A Todo list web depolyed on Heroku.
 
-### Fix: Timezone, real time where I am
+### Need to Fix: Timezone, real time where I am
